@@ -1,3 +1,6 @@
+#Claire Inglehart
+#Ethan Vaughan
+#Payton Dugas
 # Globla Vars
 charClass
 lexeme
