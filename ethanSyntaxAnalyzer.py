@@ -1,3 +1,6 @@
+#Claire Inglehart
+#Ethan Vaughan
+#Payton Dugas
 # Globla Vars
 charClass
 lexeme
@@ -27,8 +30,14 @@ LEFT_PAREN = 25
 RIGHT_PAREN = 26
 
 def main():
+<<<<<<< HEAD
     if ((in_fp = open("file.txt", "r")) == NULL):
         print("ERROR - cannot open file.txt")
     else:
         getChar()
         while ():
+=======
+    f = open("inFile.txt", "r")
+    
+
+>>>>>>> 654bb61845945df6008c5f4868754f6da820be3c
