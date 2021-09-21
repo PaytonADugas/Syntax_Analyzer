@@ -16,7 +16,7 @@ var.RIGHT_PAREN = 26
 lexeme <- c()
 variable <- ''
 
-# Grabs the expression stored in the "expression" file
+# Grabs the expression stored in the "code" file
 expr = toString(read.delim("code.txt", header = FALSE))
 expr_split <- strsplit(expr, '')[[1]]
 
