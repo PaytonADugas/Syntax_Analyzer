@@ -7,4 +7,4 @@ supposed to serve a completely different service than creating a parser.  I'd gu
 If you clone the repo and run the code, you'll see everything working but any variable names are listed by every letter.
 That's becasue I couldn't reassign variables and concatinate the chars...  Seriously R...?!  For some reason.  If someone else figures that out, great!
 
-To run the file, just type Rscript lex_an.r and it'll spit out the answers
+To run the file, just type Rscript lex_an.r and it'll spit out the answers.  You can edit the expression in the code.txt file
