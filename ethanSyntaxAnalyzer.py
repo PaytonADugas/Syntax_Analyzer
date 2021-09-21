@@ -27,4 +27,8 @@ LEFT_PAREN = 25
 RIGHT_PAREN = 26
 
 def main():
-
+    if ((in_fp = open("file.txt", "r")) == NULL):
+        print("ERROR - cannot open file.txt")
+    else:
+        getChar()
+        while ():
