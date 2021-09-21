@@ -34,13 +34,6 @@ lookup_op <- function(char){
   return (var.token)
 }
 
-isNumber <- function(n){
-  if(!is.na(as.numeric(n))){
-    return(TRUE)
-  }
-  return(FALSE)
-}
-
 # Determine character class
 getClass <- function(c){
   if(isNumber(c)){
@@ -50,6 +43,14 @@ getClass <- function(c){
   } else {
     build_lexeme(c(lookup_op(c),c))
   }
+}
+
+# Check if character is a number
+isNumber <- function(n){
+  if(!is.na(as.numeric(n))){
+    return(TRUE)
+  }
+  return(FALSE)
 }
 
 # Check if character is a letter
