@@ -8,3 +8,5 @@ If you clone the repo and run the code, you'll see everything working but any va
 That's becasue I couldn't reassign variables and concatinate the chars...  Seriously R...?!  For some reason.  If someone else figures that out, great!
 
 To run the file, just type Rscript lex_an.r and it'll spit out the answers.  You can edit the expression in the code.txt file
+
+In the book, there's a variable called ASSUGn_OP which I assume is "=" but it's never used.  So, I don't think we have to implement that?
