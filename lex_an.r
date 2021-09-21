@@ -34,7 +34,7 @@ lookup_op <- function(char){
   return (var.token)
 }
 
-# Determine character class
+# Determines is the character is a character, number or opperator
 getClass <- function(c){
   if(isNumber(c)){
     build_lexeme(c(var.INT_LIT,c))
