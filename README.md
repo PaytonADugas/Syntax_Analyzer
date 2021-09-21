@@ -5,6 +5,6 @@ Also, I really don't think I like R as a language, so we'll see how our project 
 supposed to serve a completely different service than creating a parser.  I'd guess the later. 
 
 If you clone the repo and run the code, you'll see everything working but any variable names are listed by every letter.
-That's becasue I couldn't reassign variables and concatinate the chars...  For some reason.  If someone else figures that out, great!
+That's becasue I couldn't reassign variables and concatinate the chars...  Seriously R...?!  For some reason.  If someone else figures that out, great!
 
 To run the file, just type Rscript lex_an.r and it'll spit out the answers
