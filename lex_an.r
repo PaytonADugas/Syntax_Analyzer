@@ -78,9 +78,9 @@ build_lexeme <- function(code){
 print_final <- function(l){
   print(length(lexeme))
   for(c in lexeme){
-
+    #This is supposed to loop through a list to make it easier, but append isn't adding anything to the list, lol
   }
 }
 
 loop_char()
-print_final(lexeme)
+#print_final(lexeme)
