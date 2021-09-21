@@ -6,8 +6,14 @@ That's becasue I couldn't reassign variables and concatinate the chars...  Serio
 
 To run the file, just type Rscript lex_an.r and it'll spit out the answers.  You can edit the expression in the code.txt file
 
-In the book, there's a variable called ASSUGn_OP which I assume is "=" but it's never used.  So, I don't think we have to implement that?
+In the book, there's a variable called ASSUGN_OP which I assume is "=" but it's never used.  So, I don't think we have to implement that?
 
 
 Also, I really don't think I like R as a language, so we'll see how our project goes along.  I'm not sure if it's just poorly implemented or if it's
 supposed to serve a completely different service than creating a parser.  I'd guess the later. 
+
+
+TO DO:
+- Figure out how to concatinate
+- Add an end of file thing
+- I think that's it
