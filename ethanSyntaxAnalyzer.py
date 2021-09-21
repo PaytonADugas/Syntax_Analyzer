@@ -30,4 +30,6 @@ LEFT_PAREN = 25
 RIGHT_PAREN = 26
 
 def main():
+    f = open("inFile.txt", "r")
+    
 
