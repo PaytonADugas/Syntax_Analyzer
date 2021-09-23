@@ -1,3 +1,5 @@
+library(tidyverse)
+
 # Char Classes
 LETTER <- 0
 DIGIT <- 1
@@ -29,6 +31,7 @@ main <- function() {
     for (i in seq.int(1, length(listData), 1)) {
       getChar(listData[i])
     }
+    print("Next token is: -1 Next lexeme is: EOF")
   }
 }
 
@@ -58,38 +61,41 @@ isDigit <- function(char) {
 
 # getChar - get the next character of input and determine its character class
 getChar <- function(char) {
-  if (nchar(char) > 1) {
-    tempStr <- ""
-    listChar <- strsplit(char, "")
-    for (c in listChar) {
-      if ((!isAlpha(c)) || !isDigit(c)) {
-        getChar(c)
-      } else {
-        paste(tempStr, c, sep = "")
-      }
-    }
-    getChar(tempStr)
+  if ((nchar(char) > 1) && (!isAlpha(char)) && (!isDigit(char))) {
+    sepStr(char)
   }
-  if (char != " ") {
+  if ((char != " ") || (char != "")) {
     if (isAlpha(char)) {
-      lex(char, LETTER)
+      lex(char, IDENT)
     }
     else if (isDigit(char)) {
-      lex(char, DIGIT)
+      lex(char, INT_LIT)
     } else {
-      lex(char, UNKNOWN)
+      lex(char, lookup(char))
+    }
+  }
+}
+
+# sepStr - separates symbols from letters
+sepStr <- function(char) {
+  for (i in seq.int(1, nchar(char), 1)) {
+    if ((!isAlpha(str_sub(char, i, i))) || !isDigit(str_sub(char, i, i))) {
+      getChar(str_sub(char, i, i))
+      if (i == 1) {
+        getChar(str_sub(char, 2, nchar(char)))
+        break
+      } else {
+        getChar(str_sub(char, 1, nchar(char) - 1))
+        break
+      }
     }
   }
 }
 
 # lex - simple lexical analyzer for arithematic expressions
-lex <- function(char, class) {
-  if (class == LETTER) {
-    print(paste("Next token is:", LETTER, "Next lexeme is:", char, sep = " "))
-  } else if (class == DIGIT) {
-    print(paste("Next token is:", DIGIT, "Next lexeme is:", char, sep = " "))
-  } else {
-    print(paste("Next token is:", lookup(char), "Next lexeme is:", char, sep = " "))
+lex <- function(char, code) {
+  if (!is.null(code)) {
+    print(paste("Next token is:", code, "Next lexeme is:", char, sep = " "))
   }
 }
 
