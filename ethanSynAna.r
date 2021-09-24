@@ -1,4 +1,3 @@
-install.packages("tidyverse")
 library(tidyverse)
 
 # Char Classes
@@ -18,7 +17,8 @@ LEFT_PAREN <- 25
 RIGHT_PAREN <- 26
 
 # Open File as String
-data = readLines(file.choose(), warn = FALSE)
+data <- file.choose(new = FALSE)
+data = readLines(data, warn = FALSE)
 data = toString(data)
 
 # Split string into a list of characters
