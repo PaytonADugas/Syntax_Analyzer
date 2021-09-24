@@ -6,8 +6,8 @@
 2. cd in to the Syntax_Analyzer directory
 3. Install Rscript to run R code.  This may vary depending on your machine
 4. Install tidyverse
-5. Now you should be able to run with "Rscript ethanSynAna.r"
-4. Run "Rscript ethanSynAna.r" -- it might take a minute to load some libraries
+5. Now you should be able to run with `Rscript ethanSynAna.r`
+4. Run `Rscript ethanSynAna.r` -- it might take a minute to load some libraries
 
 
 ## Required Package(tidyverse)
